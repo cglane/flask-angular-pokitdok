@@ -1,0 +1,28 @@
+ul{
+  list-style: none;
+}
+
+.loading-page{
+  min-width: 100%;
+  min-height: 100%;
+  background-color: 	#5DBCD2;
+  img{
+    width: 100
+  }
+}
+.main-page{
+  height: 100vh;
+  .col-right{
+    padding-top: 10%;
+    min-height: 100%;
+    background-color: rgb(0,1,0);
+    .graph{
+      max-width: 90%;
+    }
+  }
+  .col-left{
+    padding-top: 10%;
+    min-height: 100%;
+    background-color: rgb(220,220,220);
+  }
+}

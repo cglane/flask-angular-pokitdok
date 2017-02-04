@@ -1,0 +1,14 @@
+<div data-ng-controller = "MainCtrl as vm"class="main-page text-center">
+  <div class="col-md-6 col-left">
+      <button id = "get-partners"class="btn btn-success call-partners" type = "button"data-ng-click = "vm.getPartners()"name="button">Call Partners</button>
+      <button id = "get-graph"class= "btn"type="button" data-ng-click = "vm.getGraph()"name="button">Convert to Graph</button>
+    <ul class = "myJson"data-ng-show = "vm.gotMyJson"
+        data-ng-repeat = "item in vm.myJson">
+      <li>{{item.name}}:{{item.supported_transactions}}</li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-right">
+    <img data-ng-show = "vm.loading" class = "graph" src = "{{vm.loadingSrc}}">
+    <img id = "graph-image"data-ng-show = "vm.graph"class = "graph"src="{{vm.graph}}" alt="">
+  </div>
+</div>
