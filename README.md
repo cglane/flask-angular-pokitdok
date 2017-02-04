@@ -8,3 +8,8 @@
 ###In another terminal
 6.python run.py
 7.http://localhost:5000
+
+1. A numbered list
+ 1. A nested numbered list
+ 2. Which is numbered
+2. Which is numbered
